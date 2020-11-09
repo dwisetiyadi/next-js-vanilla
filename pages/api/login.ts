@@ -26,7 +26,9 @@ const post = (req: NextApiRequest, res: NextApiResponse): any => {
         Users.passwords,
         (err, result) => {
           if (result) {
-            const prKey = fs.readFileSync('configJWT/public.pem');
+            const prKey = fs.readFileSync('configJWT/private.pem');
+            // eslint-disable-next-line
+            console.log(prKey)
             token = sign(
               {
                 username: Users.username,
