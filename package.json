@@ -6,8 +6,8 @@
     "dev": "yarn format && yarn lint && next dev",
     "build": "yarn format && yarn lint && next build",
     "start": "yarn format && yarn lint && next start",
-    "format": "prettier --write './**/*.{ts,tsx,css,scss,html}'",
-    "lint": "eslint --fix . --ext '.ts,.tsx'"
+    "format": "prettier --write ./**/*.{ts,tsx,css,scss,html}",
+    "lint": "eslint --fix . --ext .ts,.tsx"
   },
   "dependencies": {
     "@coreui/coreui": "^3.3.0",
