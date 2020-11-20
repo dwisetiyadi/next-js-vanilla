@@ -13,7 +13,9 @@
           "@components": "./components",
           "@pages": "./pages",
           "@public": "./public",
-          "@styles": "./styles"
+          "@styles": "./styles",
+          "@redux": "./redux",
+          "@config": "./config"
         }
       }
     ]

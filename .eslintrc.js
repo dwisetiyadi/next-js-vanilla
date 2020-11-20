@@ -12,11 +12,17 @@ module.exports = {
     'plugin:prettier/recommended',
     'react-app'
   ],
-  plugins: ['react', '@typescript-eslint', 'jest', 'simple-import-sort'],
+  plugins: ['react', '@typescript-eslint', 'jest', 'simple-import-sort', 'import'],
   settings: {
     'import/resolver': {
+      "typescript": {
+        "alwaysTryTypes": true // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+      },
       'babel-module': {}
-    }
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
   },
   env: {
     browser: true,
@@ -45,6 +51,9 @@ module.exports = {
       },
     ],
     'react/jsx-props-no-spreading': 'off',
-    'simple-import-sort/sort': 'error'
+    'simple-import-sort/sort': 'error',
+    'import/no-unresolved': 'error',
+    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off'
   },
 };
