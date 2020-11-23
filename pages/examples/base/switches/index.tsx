@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-console */
+import { DocsLink } from '@components/reusable';
 import {
   CCard,
   CCardBody,
@@ -6,8 +8,7 @@ import {
   CCol,
   CRow,
   CSwitch,
-} from '@components/coreui';
-import { DocsLink } from '@components/reusable';
+} from 'coreui-next';
 import React from 'react';
 
 const Switches = () => {
@@ -25,7 +26,7 @@ const Switches = () => {
               variant="3d"
               color="primary"
               defaultChecked
-              onChange={(e) => console.log(e.target.checked)}
+              onChange={(e: any) => console.log(e.target.checked)}
             />
             <CSwitch
               className="mx-1"

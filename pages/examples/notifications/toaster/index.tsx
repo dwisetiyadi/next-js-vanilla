@@ -3,6 +3,7 @@
 /* eslint-disable no-shadow */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
+import { DocsLink } from '@components/reusable';
 import {
   CButton,
   CCard,
@@ -20,8 +21,8 @@ import {
   CToastBody,
   CToaster,
   CToastHeader,
-} from '@components/coreui';
-import { DocsLink } from '@components/reusable';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Toaster = () => {
@@ -124,7 +125,7 @@ const Toaster = () => {
                   <CInputCheckbox
                     id="fade"
                     checked={fade}
-                    onChange={(e) => {
+                    onChange={(e: any) => {
                       setFade(e.target.checked);
                     }}
                     custom
@@ -139,7 +140,7 @@ const Toaster = () => {
                     id="close"
                     custom
                     checked={closeButton}
-                    onChange={(e) => {
+                    onChange={(e: any) => {
                       setCloseButton(e.target.checked);
                     }}
                   />
@@ -172,10 +173,11 @@ const Toaster = () => {
                           Toast title
                         </CToastHeader>
                         <CToastBody>
-                          {/* eslint-disable-next-line prettier/prettier */}
+                          {/* eslint-disable prettier/prettier */}
                           {`This is a toast in ${toasterKey} positioned toaster number ${
                             key + 1
                           }.`}
+                          {/* eslint-enable prettier/prettier */}
                         </CToastBody>
                       </CToast>
                     );

@@ -1,3 +1,4 @@
+import { DocsLink } from '@components/reusable';
 import {
   CAlert,
   CButton,
@@ -8,8 +9,8 @@ import {
   CLink,
   CProgress,
   CRow,
-} from '@components/coreui';
-import { DocsLink } from '@components/reusable';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React from 'react';
 
 const Alerts = () => {

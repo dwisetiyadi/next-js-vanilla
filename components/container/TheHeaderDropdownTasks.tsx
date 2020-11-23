@@ -4,9 +4,9 @@ import {
   CDropdownItem,
   CDropdownMenu,
   CDropdownToggle,
+  CIcon,
   CProgress,
-} from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
+} from 'coreui-next';
 import React from 'react';
 
 const TheHeaderDropdownTasks = () => {

@@ -6,13 +6,13 @@ import {
   CCol,
   CContainer,
   CForm,
+  CIcon,
   CInput,
   CInputGroup,
   CInputGroupPrepend,
   CInputGroupText,
   CRow,
-} from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
+} from 'coreui-next';
 import Link from 'next/link';
 import React from 'react';
 

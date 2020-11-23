@@ -1,13 +1,16 @@
-import { CCard, CCardBody, CCardGroup, CCardHeader } from '@components/coreui';
 import { DocsLink } from '@components/reusable';
 import {
+  CCard,
+  CCardBody,
+  CCardGroup,
+  CCardHeader,
   CChartBar,
   CChartDoughnut,
   CChartLine,
   CChartPie,
   CChartPolarArea,
   CChartRadar,
-} from '@coreui/react-chartjs';
+} from 'coreui-next';
 import React from 'react';
 
 const Charts = () => {

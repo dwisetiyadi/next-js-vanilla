@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { DocsLink } from '@components/reusable';
 import {
   CButton,
   CCard,
@@ -10,8 +11,8 @@ import {
   CCollapse,
   CFade,
   CRow,
-} from '@components/coreui';
-import { DocsLink } from '@components/reusable';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Collapses = () => {

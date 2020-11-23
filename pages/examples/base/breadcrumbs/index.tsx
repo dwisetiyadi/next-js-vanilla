@@ -1,3 +1,4 @@
+import { DocsLink } from '@components/reusable';
 import {
   CBreadcrumb,
   CBreadcrumbItem,
@@ -8,8 +9,9 @@ import {
   CCol,
   CLink,
   CRow,
-} from '@components/coreui';
-import { DocsLink } from '@components/reusable';
+} from 'coreui-next';
+// import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 // routes config for breadcrumb
@@ -35,7 +37,7 @@ const Breadcrumbs = () => {
           </CCardHeader>
           <CCardBody>
             <h6>CBreadcrumbRouter wrapper component</h6>
-            <CBreadcrumbRouter routes={routes} />
+            <CBreadcrumbRouter nextRouter={useRouter} routes={routes} />
             <h6>Manual</h6>
             <CBreadcrumb>
               <CBreadcrumbItem>

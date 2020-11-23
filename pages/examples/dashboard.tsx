@@ -1,6 +1,5 @@
 /* eslint-disable react/no-array-index-key */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import navigation from '@components/container/_nav';
+import navigation from '@components/container/_navExample';
 import Layout from '@components/container/TheLayout';
 import {
   CBadge,
@@ -19,11 +18,11 @@ import {
 // import Link from 'next/link';
 import React from 'react';
 
-import MainChartExample from './examples/charts/main-chart-example';
-import WidgetsBrand from './examples/widgets/WidgetsBrand';
-import WidgetsDropdown from './examples/widgets/WidgetsDropdown';
+import MainChartExample from './charts/main-chart-example';
+import WidgetsBrand from './widgets/WidgetsBrand';
+import WidgetsDropdown from './widgets/WidgetsDropdown';
 
-export default function Home(): JSX.Element {
+const Dashboard = () => {
   return (
     <>
       <Layout navigation={navigation}>
@@ -42,10 +41,10 @@ export default function Home(): JSX.Element {
                   <CIcon name="cil-cloud-download" />
                 </CButton>
                 <CButtonGroup className="float-right mr-3">
-                  {['Day', 'Month', 'Year'].map((value, i) => (
+                  {['Day', 'Month', 'Year'].map((value, key) => (
                     <CButton
                       color="outline-secondary"
-                      key={i + 1}
+                      key={key}
                       className="mx-0"
                       active={value === 'Month'}
                     >
@@ -714,4 +713,6 @@ export default function Home(): JSX.Element {
       </Layout>
     </>
   );
-}
+};
+
+export default Dashboard;

@@ -1,6 +1,6 @@
-import { CCard, CCardBody, CCardHeader, CRow } from '@components/coreui';
-import { freeSet } from '@components/coreui/icon/coreui-icons/js/src';
 import { DocsLink } from '@components/reusable';
+import { CCard, CCardBody, CCardHeader, CRow } from 'coreui-next';
+import { freeSet } from 'coreui-next/dist/icon/coreui-icons/js/src/free/index';
 import React from 'react';
 
 import { getIconsView } from '../brands';

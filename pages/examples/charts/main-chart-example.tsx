@@ -1,12 +1,18 @@
 /* eslint-disable no-plusplus */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { CChartLine } from '@coreui/react-chartjs';
-import { getStyle, hexToRgba } from '@coreui/utils';
+import {
+  // getStyle,
+  hexToRgba,
+} from '@coreui/utils';
+import { CChartLine } from 'coreui-next';
 import React from 'react';
 
-const brandSuccess = getStyle('success') || '#4dbd74';
-const brandInfo = getStyle('info') || '#20a8d8';
-const brandDanger = getStyle('danger') || '#f86c6b';
+// const brandSuccess = getStyle('success') || '#4dbd74';
+// const brandInfo = getStyle('info') || '#20a8d8';
+// const brandDanger = getStyle('danger') || '#f86c6b';
+const brandSuccess = '#4dbd74';
+const brandInfo = '#20a8d8';
+const brandDanger = '#f86c6b';
 
 const MainChartExample = (attributes: any) => {
   const random = (min: any, max: any) => {

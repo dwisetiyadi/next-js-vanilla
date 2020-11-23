@@ -8,7 +8,8 @@ import {
   CDataTable,
   CPagination,
   CRow,
-} from '@components/coreui';
+} from 'coreui-next';
+// import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 
@@ -66,7 +67,7 @@ const Users = () => {
               itemsPerPage={5}
               activePage={page}
               clickableRows
-              onRowClick={(item) => router.push(`/users/${item.id}`)}
+              onRowClick={(item: any) => router.push(`/users/${item.id}`)}
               scopedSlots={{
                 status: (item: any) => (
                   <td>

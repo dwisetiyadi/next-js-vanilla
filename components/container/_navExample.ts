@@ -1,3 +1,6 @@
+// import React from 'react'
+// import CIcon from '@coreui/icons-react'
+
 export default [
   {
     _tag: 'CSidebarNavItem',
@@ -32,135 +35,135 @@ export default [
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Base',
-    route: '/examples/base',
+    route: '/base',
     icon: 'cil-puzzle',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: 'Breadcrumb',
-        to: '/examples/base/breadcrumbs',
+        to: '/base/breadcrumbs',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Cards',
-        to: '/examples/base/cards',
+        to: '/base/cards',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Carousel',
-        to: '/examples/base/carousels',
+        to: '/base/carousels',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Collapse',
-        to: '/examples/base/collapses',
+        to: '/base/collapses',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Forms',
-        to: '/examples/base/forms',
+        to: '/base/forms',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Jumbotron',
-        to: '/examples/base/jumbotrons',
+        to: '/base/jumbotrons',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'List group',
-        to: '/examples/base/list-groups',
+        to: '/base/list-groups',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Navs',
-        to: '/examples/base/navs',
+        to: '/base/navs',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Navbars',
-        to: '/examples/base/navbars',
+        to: '/base/navbars',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Pagination',
-        to: '/examples/base/paginations',
+        to: '/base/paginations',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Popovers',
-        to: '/examples/base/popovers',
+        to: '/base/popovers',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Progress',
-        to: '/examples/base/progress-bar',
+        to: '/base/progress-bar',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Switches',
-        to: '/examples/base/switches',
+        to: '/base/switches',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Tables',
-        to: '/examples/base/tables',
+        to: '/base/tables',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Tabs',
-        to: '/examples/base/tabs',
+        to: '/base/tabs',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Tooltips',
-        to: '/examples/base/tooltips',
+        to: '/base/tooltips',
       },
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Buttons',
-    route: '/examples/buttons',
+    route: '/buttons',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: 'Buttons',
-        to: '/examples/buttons/buttons',
+        to: '/buttons/buttons',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Brand buttons',
-        to: '/examples/buttons/brand-buttons',
+        to: '/buttons/brand-buttons',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Buttons groups',
-        to: '/examples/buttons/button-groups',
+        to: '/buttons/button-groups',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Dropdowns',
-        to: '/examples/buttons/button-dropdowns',
+        to: '/buttons/button-dropdowns',
       },
     ],
   },
   {
     _tag: 'CSidebarNavItem',
     name: 'Charts',
-    to: '/examples/charts',
+    to: '/charts',
     icon: 'cil-chart-pie',
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Icons',
-    route: '/examples/icons',
+    route: '/icons',
     icon: 'cil-star',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: 'CoreUI Free',
-        to: '/examples/icons/coreui-icons',
+        to: '/icons/coreui-icons',
         badge: {
           color: 'success',
           text: 'NEW',
@@ -169,47 +172,47 @@ export default [
       {
         _tag: 'CSidebarNavItem',
         name: 'CoreUI Flags',
-        to: '/examples/icons/flags',
+        to: '/icons/flags',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'CoreUI Brands',
-        to: '/examples/icons/brands',
+        to: '/icons/brands',
       },
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Notifications',
-    route: '/examples/notifications',
+    route: '/notifications',
     icon: 'cil-bell',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: 'Alerts',
-        to: '/examples/notifications/alerts',
+        to: '/notifications/alerts',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Badges',
-        to: '/examples/notifications/badges',
+        to: '/notifications/badges',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Modal',
-        to: '/examples/notifications/modals',
+        to: '/notifications/modals',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Toaster',
-        to: '/examples/notifications/toaster',
+        to: '/notifications/toaster',
       },
     ],
   },
   {
     _tag: 'CSidebarNavItem',
     name: 'Widgets',
-    to: '/examples/widgets',
+    to: '/widgets',
     icon: 'cil-calculator',
     badge: {
       color: 'info',
@@ -226,28 +229,28 @@ export default [
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Pages',
-    route: '/examples/pages',
+    route: '/pages',
     icon: 'cil-star',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: 'Login',
-        to: '/examples/login',
+        to: '/login',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Register',
-        to: '/examples/register',
+        to: '/register',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Error 404',
-        to: '/examples/404',
+        to: '/404',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Error 500',
-        to: '/examples/500',
+        to: '/500',
       },
     ],
   },

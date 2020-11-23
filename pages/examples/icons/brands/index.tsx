@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { CCard, CCardBody, CCardHeader, CCol, CRow } from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
-import { brandSet } from '@components/coreui/icon/coreui-icons/js/src';
 import { DocsLink } from '@components/reusable';
+import { CCard, CCardBody, CCardHeader, CCol, CIcon, CRow } from 'coreui-next';
+import { brandSet } from 'coreui-next/dist/icon/coreui-icons/js/src/brand/index';
 import React from 'react';
 
 const toKebabCase = (str: any) => {

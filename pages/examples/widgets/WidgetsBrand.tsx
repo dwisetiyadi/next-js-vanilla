@@ -1,7 +1,6 @@
 /* eslint-disable react/require-default-props */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { CCol, CRow, CWidgetBrand } from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
+import { CCol, CIcon, CRow, CWidgetBrand } from 'coreui-next';
 import PropTypes from 'prop-types';
 import React from 'react';
 

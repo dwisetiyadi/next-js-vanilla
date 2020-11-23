@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { DocsLink } from '@components/reusable';
 import {
   CBadge,
   CCard,
@@ -7,8 +8,8 @@ import {
   CCol,
   CDataTable,
   CRow,
-} from '@components/coreui';
-import { DocsLink } from '@components/reusable';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React from 'react';
 
 import usersData from '../../users/UsersData';

@@ -1,8 +1,5 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-// import MainChartExample from '../charts/MainChartExample.js';
-// const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'));
-// const WidgetsBrand = lazy(() => import('../widgets/WidgetsBrand.js'));
 import navigation from '@components/container/_navExample';
 import Layout from '@components/container/TheLayout';
 import {
@@ -15,17 +12,22 @@ import {
   CCardFooter,
   CCardHeader,
   CCol,
+  CIcon,
   CProgress,
   CRow,
-} from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React from 'react';
+
+import MainChartExample from './charts/main-chart-example';
+import WidgetsBrand from './widgets/WidgetsBrand';
+import WidgetsDropdown from './widgets/WidgetsDropdown';
 
 export default function Home(): JSX.Element {
   return (
     <>
       <Layout navigation={navigation}>
-        {/* <WidgetsDropdown /> */}
+        <WidgetsDropdown />
         <CCard>
           <CCardBody>
             <CRow>
@@ -53,7 +55,7 @@ export default function Home(): JSX.Element {
                 </CButtonGroup>
               </CCol>
             </CRow>
-            {/* <MainChartExample style={{ height: '300px', marginTop: '40px' }} /> */}
+            <MainChartExample style={{ height: '300px', marginTop: '40px' }} />
           </CCardBody>
           <CCardFooter>
             <CRow className="text-center">
@@ -110,7 +112,7 @@ export default function Home(): JSX.Element {
           </CCardFooter>
         </CCard>
 
-        {/* <WidgetsBrand withCharts /> */}
+        <WidgetsBrand withCharts />
 
         <CRow>
           <CCol>
@@ -437,7 +439,7 @@ export default function Home(): JSX.Element {
                       <td className="text-center">
                         <div className="c-avatar">
                           <img
-                            src="avatars/1.jpg"
+                            src="/avatars/1.jpg"
                             className="c-avatar-img"
                             alt="admin@bootstrapmaster.com"
                           />
@@ -482,7 +484,7 @@ export default function Home(): JSX.Element {
                       <td className="text-center">
                         <div className="c-avatar">
                           <img
-                            src="avatars/2.jpg"
+                            src="/avatars/2.jpg"
                             className="c-avatar-img"
                             alt="admin@bootstrapmaster.com"
                           />
@@ -527,7 +529,7 @@ export default function Home(): JSX.Element {
                       <td className="text-center">
                         <div className="c-avatar">
                           <img
-                            src="avatars/3.jpg"
+                            src="/avatars/3.jpg"
                             className="c-avatar-img"
                             alt="admin@bootstrapmaster.com"
                           />
@@ -572,7 +574,7 @@ export default function Home(): JSX.Element {
                       <td className="text-center">
                         <div className="c-avatar">
                           <img
-                            src="avatars/4.jpg"
+                            src="/avatars/4.jpg"
                             className="c-avatar-img"
                             alt="admin@bootstrapmaster.com"
                           />
@@ -617,7 +619,7 @@ export default function Home(): JSX.Element {
                       <td className="text-center">
                         <div className="c-avatar">
                           <img
-                            src="avatars/5.jpg"
+                            src="/avatars/5.jpg"
                             className="c-avatar-img"
                             alt="admin@bootstrapmaster.com"
                           />
@@ -662,7 +664,7 @@ export default function Home(): JSX.Element {
                       <td className="text-center">
                         <div className="c-avatar">
                           <img
-                            src="avatars/6.jpg"
+                            src="/avatars/6.jpg"
                             className="c-avatar-img"
                             alt="admin@bootstrapmaster.com"
                           />

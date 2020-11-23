@@ -1,3 +1,4 @@
+import { DocsLink } from '@components/reusable';
 import {
   CButton,
   CCard,
@@ -7,8 +8,8 @@ import {
   CLink,
   CRow,
   CTooltip,
-} from '@components/coreui';
-import { DocsLink } from '@components/reusable';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React from 'react';
 
 const Tooltips = () => {

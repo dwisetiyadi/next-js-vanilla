@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { CContainer, CFade } from '@components/coreui';
+import { CContainer, CFade } from 'coreui-next';
 import React from 'react';
 // import { Redirect, Route, Switch } from 'react-router-dom';
 

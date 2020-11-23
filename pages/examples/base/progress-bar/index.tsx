@@ -1,11 +1,11 @@
+import { DocsLink } from '@components/reusable';
 import {
   CCard,
   CCardBody,
   CCardHeader,
   CProgress,
   CProgressBar,
-} from '@components/coreui';
-import { DocsLink } from '@components/reusable';
+} from 'coreui-next';
 import React from 'react';
 
 const ProgressBar = () => {

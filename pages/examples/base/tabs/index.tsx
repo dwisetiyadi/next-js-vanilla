@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { DocsLink } from '@components/reusable';
 import {
   CCard,
   CCardBody,
   CCardHeader,
   CCol,
+  CIcon,
   CNav,
   CNavItem,
   CNavLink,
@@ -10,9 +13,8 @@ import {
   CTabContent,
   CTabPane,
   CTabs,
-} from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
-import { DocsLink } from '@components/reusable';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Tabs = () => {
@@ -114,7 +116,7 @@ const Tabs = () => {
           <CCardBody>
             <CTabs
               activeTab={active}
-              onActiveTabChange={(idx) => setActive(idx)}
+              onActiveTabChange={(idx: any) => setActive(idx)}
             >
               <CNav variant="tabs">
                 <CNavItem>

@@ -4,9 +4,10 @@ import {
   CCardBody,
   CCardHeader,
   CCol,
+  CIcon,
   CRow,
-} from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React from 'react';
 
 const BrandButtons = () => {

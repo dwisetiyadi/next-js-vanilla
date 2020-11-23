@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { CLink } from '@components/coreui';
+import { CLink } from 'coreui-next';
+// import Link from 'next/link';
 import React from 'react';
 
 const DocsLink = (props: any) => {

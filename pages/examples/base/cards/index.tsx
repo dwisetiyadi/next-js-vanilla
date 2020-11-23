@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
+import { DocsLink } from '@components/reusable';
 import {
   CBadge,
   CCard,
@@ -8,12 +9,12 @@ import {
   CCol,
   CCollapse,
   CFade,
+  CIcon,
   CLink,
   CRow,
   CSwitch,
-} from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
-import { DocsLink } from '@components/reusable';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React from 'react';
 
 const Cards = () => {
@@ -77,7 +78,7 @@ const Cards = () => {
                   color="info"
                   defaultChecked
                   size="sm"
-                  tabIndex="0"
+                  tabIndex={0}
                 />
               </div>
             </CCardHeader>

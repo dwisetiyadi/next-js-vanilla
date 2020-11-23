@@ -4,9 +4,9 @@ import {
   CDropdownItem,
   CDropdownMenu,
   CDropdownToggle,
+  CIcon,
   CImg,
-} from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
+} from 'coreui-next';
 import React from 'react';
 
 const TheHeaderDropdown = () => {
@@ -16,7 +16,7 @@ const TheHeaderDropdown = () => {
       <CDropdownToggle className="c-header-nav-link" caret={false}>
         <div className="c-avatar">
           <CImg
-            src="avatars/6.jpg"
+            src="/avatars/6.jpg"
             className="c-avatar-img"
             alt="admin@bootstrapmaster.com"
           />

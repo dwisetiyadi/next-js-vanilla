@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   CCreateElement,
+  CIcon,
   CSidebar,
   CSidebarBrand,
   CSidebarMinimizer,
@@ -9,13 +10,17 @@ import {
   CSidebarNavDropdown,
   CSidebarNavItem,
   CSidebarNavTitle,
-} from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
+} from 'coreui-next';
+// import Link from 'next/link';
+// import { useRouter } from 'next/router';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 // sidebar nav config
 // import navigation from './_nav';
+
+// const NewCsidebarNavDropdown = <CSidebarNavDropdown nextRouter={useRouter} />;
+// console.log(NewCsidebarNavDropdown);
 
 const TheSidebar = (props: any) => {
   const dispatch = useDispatch();

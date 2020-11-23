@@ -1,4 +1,4 @@
-import { CFooter } from '@components/coreui';
+import { CFooter } from 'coreui-next';
 import React from 'react';
 
 const TheFooter = () => {

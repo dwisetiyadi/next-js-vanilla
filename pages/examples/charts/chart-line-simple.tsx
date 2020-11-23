@@ -2,8 +2,11 @@
 /* eslint-disable react/require-default-props */
 /* eslint-disable prefer-spread */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { CChartLine } from '@coreui/react-chartjs';
-import { deepObjectsMerge, getColor } from '@coreui/utils';
+import {
+  deepObjectsMerge,
+  // getColor,
+} from '@coreui/utils';
+import { CChartLine } from 'coreui-next';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -18,24 +21,24 @@ const ChartLineSimple = (props: any) => {
     ...attributes
   } = props;
 
-  const pointHoverColor = (() => {
-    if (pointHoverBackgroundColor) {
-      return pointHoverBackgroundColor;
-    }
-    if (backgroundColor !== 'transparent') {
-      return backgroundColor;
-    }
-    return borderColor;
-  })();
+  // const pointHoverColor = (() => {
+  //   if (pointHoverBackgroundColor) {
+  //     return pointHoverBackgroundColor;
+  //   }
+  //   if (backgroundColor !== 'transparent') {
+  //     return backgroundColor;
+  //   }
+  //   return borderColor;
+  // })();
 
   const defaultDatasets = (() => {
     return [
       {
         data: dataPoints,
-        borderColor: getColor(borderColor),
-        backgroundColor: getColor(backgroundColor),
-        pointBackgroundColor: getColor(pointHoverColor),
-        pointHoverBackgroundColor: getColor(pointHoverColor),
+        // borderColor: getColor(borderColor),
+        // backgroundColor: getColor(backgroundColor),
+        // pointBackgroundColor: getColor(pointHoverColor),
+        // pointHoverBackgroundColor: getColor(pointHoverColor),
         label,
       },
     ];

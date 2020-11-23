@@ -1,18 +1,23 @@
 import '@styles/style.scss';
-import '@styles/CDataTable.module.css';
-import '@styles/CIcon.css';
-import '@styles/CToast.css';
-import '@styles/perfect-scrollbar.css';
-import '@styles/scrollbar.css';
-import '@styles/tippy.css';
-import '@components/coreui/icon/coreui-icons/css/all.css';
+import 'coreui-next/css/coreui/CDataTable.module.css';
+import 'coreui-next/css/coreui/CIcon.css';
+import 'coreui-next/css/coreui/CToast.css';
+import 'coreui-next/css/coreui/perfect-scrollbar.css';
+import 'coreui-next/css/coreui/scrollbar.css';
+import 'coreui-next/css/tippy.css';
+import 'coreui-next/css/coreui-icons/css/all.css';
+import 'coreui-next/css/coreui-chartjs/coreui-chartjs.css';
+import 'nprogress/nprogress.css';
 
-import { icons } from '@components/coreui/icon/coreui-icons/js';
 import { wrapper } from '@redux/core/store';
 import { AppProps } from 'next/app';
+import Router from 'next/router';
+import NProgress from 'nprogress';
 import React, { FC } from 'react';
 
-global.REACTICONS = icons;
+Router.events.on('routeChangeStart', () => NProgress.start());
+Router.events.on('routeChangeComplete', () => NProgress.done());
+Router.events.on('routeChangeError', () => NProgress.done());
 
 const WrappedApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   // console.log('props _app.tsx:', pageProps);

@@ -1,8 +1,8 @@
 /* eslint-disable react/forbid-prop-types */
 /* eslint-disable react/require-default-props */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { CChartBar } from '@coreui/react-chartjs';
-import { getColor } from '@coreui/utils';
+// import { getColor } from '@coreui/utils';
+import { CChartBar } from 'coreui-next';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -20,8 +20,8 @@ const ChartBarSimple = (props: any) => {
     return [
       {
         data: dataPoints,
-        backgroundColor: getColor(backgroundColor),
-        pointHoverBackgroundColor: getColor(pointHoverBackgroundColor),
+        // backgroundColor: getColor(backgroundColor),
+        // pointHoverBackgroundColor: getColor(pointHoverBackgroundColor),
         label,
         barPercentage: 0.5,
         categoryPercentage: 1,

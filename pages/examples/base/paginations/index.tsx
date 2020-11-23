@@ -1,5 +1,5 @@
-import { CCard, CCardBody, CCardHeader, CPagination } from '@components/coreui';
 import { DocsLink } from '@components/reusable';
+import { CCard, CCardBody, CCardHeader, CPagination } from 'coreui-next';
 import React, { useState } from 'react';
 
 const Paginations = () => {

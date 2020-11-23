@@ -16,12 +16,16 @@ declare module 'reactstrap/lib/utils';
 
 declare module '@coreui/utils';
 
-declare namespace NodeJS {
-  export interface Global {
-    REACTICONS: any;
-  }
-}
-declare let REACTICONS: any;
+declare module 'coreui-next/dist/icon/coreui-icons/js/src/brand/index';
+declare module 'coreui-next/dist/icon/coreui-icons/js/src/flag/index';
+declare module 'coreui-next/dist/icon/coreui-icons/js/src/free/index';
+
+// declare namespace NodeJS {
+//   export interface Global {
+//     REACTICONS: any;
+//   }
+// }
+// declare let REACTICONS: any;
 
 interface EventTarget {
   value(colName: any, value: any, arg2: string);

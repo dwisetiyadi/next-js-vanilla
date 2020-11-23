@@ -1,3 +1,4 @@
+import { DocsLink } from '@components/reusable';
 import {
   CBadge,
   CButton,
@@ -7,8 +8,8 @@ import {
   CCardHeader,
   CCol,
   CRow,
-} from '@components/coreui';
-import { DocsLink } from '@components/reusable';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React from 'react';
 
 const Badges = () => {

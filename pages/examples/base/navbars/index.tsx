@@ -1,3 +1,4 @@
+import { DocsLink } from '@components/reusable';
 import {
   CButton,
   CCard,
@@ -17,8 +18,8 @@ import {
   CNavbarText,
   CNavLink,
   CToggler,
-} from '@components/coreui';
-import { DocsLink } from '@components/reusable';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React, { useState } from 'react';
 
 const CNavbars = () => {

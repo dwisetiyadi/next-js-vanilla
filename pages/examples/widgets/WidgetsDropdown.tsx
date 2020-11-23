@@ -4,10 +4,11 @@ import {
   CDropdownItem,
   CDropdownMenu,
   CDropdownToggle,
+  CIcon,
   CRow,
   CWidgetDropdown,
-} from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React from 'react';
 
 import ChartBarSimple from '../charts/chart-bar-simple';

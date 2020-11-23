@@ -2,6 +2,7 @@ import {
   CCardFooter,
   CCardGroup,
   CCol,
+  CIcon,
   CLink,
   CProgress,
   CRow,
@@ -9,8 +10,8 @@ import {
   CWidgetProgress,
   CWidgetProgressIcon,
   CWidgetSimple,
-} from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React from 'react';
 
 import ChartBarSimple from '../charts/chart-bar-simple';

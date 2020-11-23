@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable no-shadow */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { CCard, CCardBody, CCardHeader, CCol, CRow } from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
+import { CCard, CCardBody, CCardHeader, CCol, CIcon, CRow } from 'coreui-next';
 import React from 'react';
 
 import usersData from './UsersData';

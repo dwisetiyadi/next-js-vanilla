@@ -1,3 +1,4 @@
+import { DocsLink } from '@components/reusable';
 import {
   CButton,
   CCard,
@@ -14,6 +15,7 @@ import {
   CForm,
   CFormGroup,
   CFormText,
+  CIcon,
   CInput,
   CInputCheckbox,
   CInputFile,
@@ -29,9 +31,8 @@ import {
   CSwitch,
   CTextarea,
   CValidFeedback,
-} from '@components/coreui';
-import { CIcon } from '@components/coreui/icon/coreui-icons-react';
-import { DocsLink } from '@components/reusable';
+} from 'coreui-next';
+// import Link from 'next/link';
 import React from 'react';
 
 const BasicForms = () => {
