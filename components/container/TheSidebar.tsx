@@ -12,7 +12,7 @@ import {
   CSidebarNavTitle,
 } from 'coreui-next';
 // import Link from 'next/link';
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -27,6 +27,7 @@ const TheSidebar = (props: any) => {
   const show = useSelector((state: any) => state.container.sidebarShow);
 
   const { navigation } = props;
+  const router = useRouter();
 
   return (
     <CSidebar
@@ -47,6 +48,7 @@ const TheSidebar = (props: any) => {
       </CSidebarBrand>
       <CSidebarNav>
         <CCreateElement
+          nextRouter={router.pathname}
           items={navigation}
           components={{
             CSidebarNavDivider,

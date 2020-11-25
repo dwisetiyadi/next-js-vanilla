@@ -1,13 +1,4 @@
 import '@styles/style.scss';
-import 'coreui-next/css/coreui/CDataTable.module.css';
-import 'coreui-next/css/coreui/CIcon.css';
-import 'coreui-next/css/coreui/CToast.css';
-import 'coreui-next/css/coreui/perfect-scrollbar.css';
-import 'coreui-next/css/coreui/scrollbar.css';
-import 'coreui-next/css/tippy.css';
-import 'coreui-next/css/coreui-icons/css/all.css';
-import 'coreui-next/css/coreui-chartjs/coreui-chartjs.css';
-import 'nprogress/nprogress.css';
 
 import { wrapper } from '@redux/core/store';
 import { AppProps } from 'next/app';

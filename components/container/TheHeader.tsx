@@ -24,18 +24,6 @@ import {
   TheHeaderDropdownTasks,
 } from './index';
 
-// routes config for breadcrumb
-const routes = [
-  {
-    path: '/users',
-    name: 'Users',
-  },
-  {
-    path: '/users/create',
-    name: 'User Create',
-  },
-];
-
 const TheHeader = () => {
   const dispatch = useDispatch();
   const sidebarShow = useSelector((state: any) => state.container.sidebarShow);
@@ -53,6 +41,23 @@ const TheHeader = () => {
       : 'responsive';
     dispatch({ type: 'set', sidebarShow: val });
   };
+
+  const router = useRouter();
+
+  // routes config for breadcrumb
+  const uri: any[] = router.pathname.split('/');
+  const routes = uri
+    .map((item: string, key: number) => {
+      const resUri = uri
+        .filter((uriPath: string, keyPath: number) => keyPath <= key)
+        .join('/');
+      const res = {
+        path: resUri,
+        name: item.charAt(0).toUpperCase() + item.slice(1),
+      };
+      return res;
+    })
+    .filter((item) => item.path !== '');
 
   return (
     <CHeader withSubheader>
@@ -93,7 +98,7 @@ const TheHeader = () => {
         <CBreadcrumbRouter
           className="border-0 c-subheader-nav m-0 px-0 px-md-3"
           routes={routes}
-          nextRouter={useRouter}
+          nextRouter={router.pathname}
         />
         <div className="d-md-down-none mfe-2 c-subheader-nav">
           <CLink className="c-subheader-nav-link" href="#">
