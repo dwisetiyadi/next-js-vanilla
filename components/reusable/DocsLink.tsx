@@ -14,7 +14,7 @@ const DocsLink = (props: any) => {
     <div className="card-header-actions">
       <CLink
         {...rest}
-        href={hrefParse}
+        to={hrefParse}
         rel="noreferrer noopener"
         target="_blank"
         className="card-header-action"
